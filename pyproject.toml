@@ -20,7 +20,7 @@ classifiers = [
 
 dependencies = [
   "Scrapy==2.11.0",
-  "homework-8.1@git+https://github.com/madzwb-GoIT-Python-Web/homework-8.1.git",
+  # "homework-8.1@git+https://github.com/madzwb-GoIT-Python-Web/homework-8.1.git",
 ]
 
 [project.scripts]
