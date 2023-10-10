@@ -13,6 +13,7 @@ def scrap_with_spider(spider: scrapy.Spider):
 def scrap(spiders):
     with Pool() as pool:
         pool.map(scrap_with_spider, spiders)
+        pool.close()
         pool.join()
     # pr1 = Process(target=scrap_with_spider, args=(QuotesSpider,))
     # pr2 = Process(target=scrap_with_spider, args=(AuthorsSpider,))
